@@ -166,10 +166,10 @@
 							<h4 class="title">
 								Send Us a Message
 							</h4>
-							<form action="#">
-								<input type="text" class="input-field" placeholder="Enter Your Full Name">
-								<input type="email" class="input-field" placeholder="Enter Your Email Address">
-								<textarea class="input-field textarea" placeholder="Message *"></textarea>
+							<form id="myForm" action="https://formspree.io/f/xwkddkrr" method="POST" onsubmit="submitForm(event)">
+								<input type="text" class="input-field" name="text" required placeholder="Enter Your Full Name">
+								<input type="email" class="input-field" name="email" required placeholder="Enter Your Email Address">
+								<textarea class="input-field textarea" name="message" required placeholder="Message *"></textarea>
 								<button type="submit" class="mybtn1">SUBMIT NOW</button>
 							</form>
 						</div>
@@ -326,6 +326,14 @@
 	<script src="assets/js/TweenMax.js"></script>
 	<script src="assets/js/mousemoveparallax.js"></script>
 	<!-- main -->
+	<script>
+		 document.getElementById("myForm").addEventListener("submit", function () {
+        setTimeout(function () {
+            document.getElementById("myForm").reset();
+        }, 1000);
+    });
+    
+	</script>
 	<script src="assets/js/main.js"></script>
 </body>
 
