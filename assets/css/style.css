@@ -432,12 +432,13 @@ select:focus {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 8px;
-  background: -webkit-gradient(linear, right top, left top, from(rgb(255, 52, 77)), to(rgb(210, 39, 60)));
-  background: linear-gradient(to left, rgb(255, 52, 77), rgb(210, 39, 60));
+  background: -webkit-gradient(linear, right top, left top, from(rgb(252, 255, 52)), to(rgb(252, 255, 52)));
+  background: linear-gradient(to left, rgb(252, 255, 52), rgb(252, 255, 52));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .section-heading .subtitle.extra-padding {
+  
   margin-bottom: 17px;
 }
 .section-heading .title {
@@ -1437,8 +1438,8 @@ select:focus {
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, right top, left top, from(rgb(255, 52, 77)), to(rgb(210, 39, 60)));
-  background: linear-gradient(to left, rgb(255, 52, 77), rgb(210, 39, 60));
+  background: -webkit-gradient(linear, right top, left top, from(rgb(252, 255, 52)), to(rgb(252, 255, 52)));
+  background: linear-gradient(to left, rgb(252, 255, 52), rgb(252, 255, 52));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -4928,5 +4929,10 @@ select:focus {
   color: #fff;
   font-size: 20px;
 }
+
+.shape.man {
+  margin-top: -10px; /* Adjust the value as needed */
+}
+
 
 /* login modal Area End */
